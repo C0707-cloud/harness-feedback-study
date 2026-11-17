@@ -1,0 +1,232 @@
+[
+  {
+    "run_id": 1,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 372,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    if year % 400 == 0:\\n        return True\\n    if year % 100 == 0:\\n        return False\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    if year % 400 == 0:\n        return True\n    if year % 100 == 0:\n        return False\n    return year % 4 == 0\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 2,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 3,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 4,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 5,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 6,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 7,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 372,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    if year % 400 == 0:\\n        return True\\n    if year % 100 == 0:\\n        return False\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    if year % 400 == 0:\n        return True\n    if year % 100 == 0:\n        return False\n    return year % 4 == 0\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 8,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 369,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    if year % 400 == 0:\\n        return True\\n    if year % 100 == 0:\\n        return False\\n    return year % 4 == 0\"}",
+        "code": "def is_leap(year):\n    if year % 400 == 0:\n        return True\n    if year % 100 == 0:\n        return False\n    return year % 4 == 0",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 9,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 372,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    if year % 400 == 0:\\n        return True\\n    if year % 100 == 0:\\n        return False\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    if year % 400 == 0:\n        return True\n    if year % 100 == 0:\n        return False\n    return year % 4 == 0\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  },
+  {
+    "run_id": 10,
+    "mode": "full",
+    "passed": true,
+    "total_rounds": 2,
+    "total_tokens": 360,
+    "trace": [
+      {
+        "round": 1,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0\n",
+        "feedback_text": "测试失败：is_leap(1900) expected False, got True",
+        "verifier_pass": false
+      },
+      {
+        "round": 2,
+        "model_output": "{\"tool\": \"submit\", \"code\": \"def is_leap(year):\\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\\n\"}",
+        "code": "def is_leap(year):\n    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)\n",
+        "feedback_text": "通过。",
+        "verifier_pass": true
+      }
+    ]
+  }
+]
